@@ -10,12 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const shopper = {
-      email: document.getElementById("email").value,
-      name: document.getElementById("name").value,
-      phone: document.getElementById("phone").value || null,
-      age: parseInt(document.getElementById("age").value),
-      address: document.getElementById("address").value
-    };
+  email: document.getElementById("email").value.trim(),
+  name: document.getElementById("name").value.trim(),
+  phone: document.getElementById("phone").value.trim() || null,
+  age: parseInt(document.getElementById("age").value),
+  address: document.getElementById("address").value.trim(),
+  timestamp: new Date().toISOString() 
+};
+
 
     output.textContent = JSON.stringify(shopper, null, 2);
     form.reset();

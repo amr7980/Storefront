@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopper Management</title>
+  <link rel="stylesheet" href="css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopper Management Form</h1>
+    <form id="shopperForm" class="shopper-form needs-validation" novalidate>
+      <div class="form-group">
+        <label for="email">Email address (required)</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="form-group">
+        <label for="name">Full Name (required)</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" class="form-control" id="phone" />
+      </div>
+      <div class="form-group">
+        <label for="age">Age (required)</label>
+        <input type="number" class="form-control" id="age" required />
+      </div>
+      <div class="form-group">
+        <label for="address">Address (required)</label>
+        <input type="text" class="form-control" id="address" required />
+      </div>
+      <div class="button-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+    <h2>JSON Output</h2>
+    <pre id="jsonOutput" class="json-output"></pre>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
